@@ -1,0 +1,23 @@
+digraph C {
+ graph [rankdir=LR,bgcolor="transparent",pad=.3,nodesep=.55,ranksep=.65,splines=polyline,fontname="Arial"];
+ node [shape=box,style="rounded,filled",fillcolor="#eff6ff",color="#a3bad4",fontname="Arial",fontsize=12,margin=".17,.12"];
+ edge [color="#657f99",fontname="Arial",fontsize=10,arrowsize=.7];
+ t1 [label="First-floor thermostats\n3 radiant zones"];
+ t2 [label="Upstairs thermostats\n2 radiant zones"];
+ w1 [label="ZCM-1 — upper radiant\nzone control module\nES/ES contact",fillcolor="#d8f2e7"];
+ w2 [label="ZCM-2 — lower radiant\nzone control module\nES/ES contact",fillcolor="#ffebdf",color="#dd987a"];
+ d1 [label="MC-1 — DuoMix 201\n1–2 Mix 1 Demand",fillcolor="#dceafe"];
+ d2 [label="MC-1 — DuoMix 201\n3–4 Mix 2 Demand",fillcolor="#dceafe"];
+ p1 [label="12 Mix 1 Pmp\n120 V observed on call",fillcolor="#d8f2e7"];
+ p2 [label="8 Mix 2 Pmp\nNO 120 V on call",fillcolor="#ffebdf",color="#dd987a"];
+ t1 -> w1 [style=dashed,label="input path unverified"];
+ t2 -> w2 [style=dashed,label="input path unverified"];
+ w1 -> d1 [label="BROWN → terminal 1\n27.2 V idle / ~1 V call",color="#2f8c75",fontcolor="#247563",penwidth=2];
+ w2 -> d2 [label="RED → terminal 3\n27.2 V idle AND call",color="#c66a4b",fontcolor="#a34730",penwidth=2];
+ d1 -> p1;
+ d2 -> p2 [style=dashed,label="output absent"];
+ common [label="ES white / transformer-side wiring\nDuoMix 2 & 4 tied\nreturn topology unresolved",fillcolor="#fff8db",color="#d8bf77"];
+ common -> w1 [style=dotted,arrowhead=none];
+ common -> w2 [style=dotted,arrowhead=none];
+ note [label="Solid colored arrows: traced / measured\nDashed: logical relationship, not traced wiring",shape=note,fillcolor="#f1f5f9"];
+}

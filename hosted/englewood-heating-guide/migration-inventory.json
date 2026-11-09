@@ -1,0 +1,18 @@
+{
+  "notes/01-system-architecture.md": "kb/01-system-architecture.html",
+  "notes/02-zones-and-staging.md": "kb/02-zones-and-staging.html",
+  "notes/03-controls-terminals.md": "kb/03-controls-terminals.html",
+  "notes/04-wiring-discoveries.md": "kb/04-wiring-discoveries.html",
+  "notes/05-troubleshooting.md": "kb/05-troubleshooting.html",
+  "notes/06-open-questions.md": "kb/06-open-questions.html",
+  "notes/07-conversation-history.md": "kb/07-conversation-history.html",
+  "notes/08-photo-catalog.md": "kb/08-photo-catalog.html",
+  "notes/09-reference-sources.md": "kb/09-reference-sources.html",
+  "notes/10-work-handoff.md": "kb/10-work-handoff.html",
+  "notes/11-report-brief.md": "kb/11-report-brief.html",
+  "notes/12-terminology-and-equipment-tags.md": "kb/12-terminology-and-equipment-tags.html",
+  "notes/13-guide-synthesis.md": "kb/13-guide-synthesis.html",
+  "INDEX.md": "kb/legacy-INDEX.html",
+  "README.md": "kb/legacy-README.html",
+  "reporting/README.md": "kb/legacy-reporting-README.html"
+}

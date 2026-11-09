@@ -1,0 +1,7 @@
+'use strict';
+const toggle=document.querySelector('#nav-toggle');
+toggle?.addEventListener('click',()=>{const open=document.body.classList.toggle('nav-open');toggle.setAttribute('aria-expanded',String(open));});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.body.classList.remove('nav-open');toggle?.setAttribute('aria-expanded','false');}});
+let indexPromise;const search=document.querySelector('#kb-search'),results=document.querySelector('#results');
+const escapeHTML=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+search?.addEventListener('input',async()=>{const q=search.value.trim().toLowerCase();if(!q){results.innerHTML='';return;}try{indexPromise??=fetch('/assets/search.json').then(r=>{if(!r.ok)throw Error();return r.json()});const entries=await indexPromise;if(q!==search.value.trim().toLowerCase())return;const terms=q.split(/\s+/);const found=entries.filter(x=>terms.every(t=>(x.title+' '+x.text).toLowerCase().includes(t))).sort((a,b)=>{const score=x=>(x.title.toLowerCase().includes(q)?100:0)+(x.text.toLowerCase().includes(q)?50:0)+(x.url.includes('#')?5:0);return score(b)-score(a)}).slice(0,24);results.innerHTML=found.length?found.map(x=>`<a href="${x.url}">${escapeHTML(x.title)}<small>${escapeHTML(x.text.slice(0,130))}…</small></a>`).join(''):'<p>No matching records. Try a part number, zone name, or terminal.</p>';}catch{results.textContent='Search is unavailable. Use the index tree below.'}});

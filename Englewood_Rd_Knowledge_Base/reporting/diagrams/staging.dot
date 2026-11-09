@@ -1,0 +1,16 @@
+digraph S {
+ graph [rankdir=LR,bgcolor="transparent",pad=.25,nodesep=.4,ranksep=.7,splines=polyline,fontname="Arial"];
+ node [shape=box,style="rounded,filled",fillcolor="#eff6ff",color="#9cb9d8",fontname="Arial",fontsize=12];
+ edge [color="#7891a8",fontname="Arial",fontsize=10,arrowsize=.7];
+ therm [label="5 air thermostats\n(stage 1 radiant / stage 2 air)"];
+ radiant [label="Radiant zone control modules\n(6 zones total)",fillcolor="#d7eee8"];
+ air [label="Stage 2 hydronic forced air\n(control wiring unresolved)",fillcolor="#fff3df"];
+ downstairs [label="AHU-1 — basement AM30\nserves basement / living / master"];
+ upstairs [label="AHU-2 — attic AM30\nserves upstairs zones"];
+ therm -> radiant [label="stage 1",style=dashed];
+ therm -> air [label="stage 2",style=dashed];
+ air -> {downstairs upstairs};
+ bath [label="Master Bath floor sensor\nthermostat mapping TBD",fillcolor="#fff8db"];
+ bath -> radiant [style=dotted];
+ note [label="Staging diagram = functional intent\nNOT verified wire-level routing",shape=note,fillcolor="#fff8db"];
+}
