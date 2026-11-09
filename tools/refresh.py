@@ -42,7 +42,7 @@ for p in pages:
 (D/'assets/search.json').write_text(json.dumps(search,ensure_ascii=False))
 # Single equipment metadata source lives in equipment HTML pages.
 f=D/'index.html';s=f.read_text();m=re.search(r'(<script id="report-data" type="application/json">)(.*?)(</script>)',s,re.S);data=json.loads(m[2]);data['components']={}
-for p in (D/'equipment').glob('*.html'):
+for p in sorted((D/'equipment').glob('*.html')):
  c=json.loads(re.search(r'<script type="application/json" id="component-record">(.*?)</script>',p.read_text(),re.S)[1]);data['components'][c['id']]=c
 s=s[:m.start(2)]+json.dumps(data).replace('</','<\\/')+s[m.end(2):];f.write_text(s)
 print(f'Refreshed {len(pages)} HTML pages and {len(search)} searchable sections.')
