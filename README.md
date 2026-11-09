@@ -11,7 +11,6 @@ This repository maintains the interactive system guide and HTML knowledge base f
 | [dist/references/](dist/references/) and [dist/archive/](dist/archive/) | Downloadable manuals, source notes, and historical reference documents |
 | [evidence/](evidence/) | Original photos, historical manifest, Markdown snapshot, and migration map |
 | [tools/](tools/) | Refresh and validation scripts |
-| [.openai/hosting.json](.openai/hosting.json) | Configuration for the previous Sites deployment, retained during cutover. |
 
 To preview locally, run `python3 -m http.server 8000 --directory dist` from the repository root and open [localhost:8000](http://localhost:8000/). Serve the site over HTTP so the knowledge base can load its search index. Site links are relative so the same files also work under the GitHub Pages repository path.
 
@@ -22,6 +21,6 @@ python3 tools/refresh.py
 python3 tools/validate.py
 ```
 
-The refresh script updates the navigation, search index, and overview equipment data. Commit the edited HTML and any generated changes together. Push to `main` to validate and publish `dist/` through the GitHub Pages workflow. In repository Settings → Pages, select GitHub Actions as the publishing source.
+The refresh script updates the navigation, search index, and overview equipment data. Commit the edited HTML and any generated changes together. Pushes to `main` trigger the GitHub Pages workflow when they change `dist/`, `tools/`, or the Pages workflow itself. You can also run it manually from the Actions tab. In repository Settings → Pages, select GitHub Actions as the publishing source.
 
 The evidence manifest and migration map use the original paths as historical identifiers. The Markdown snapshot is reference material. The retired standalone report and its builders remain available in Git history at `1eb0741`.
