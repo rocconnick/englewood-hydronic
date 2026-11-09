@@ -20,7 +20,7 @@ for f in files:
  # Fill IDs on newer hand-edited headings, preserving old anchors.
  body=re.sub(r'<h([1-6])>(.*?)</h\1>',lambda m:f'<h{m[1]} id="{slug(m[2])}">{m[2]}</h{m[1]}>',body,flags=re.S)
  s=re.sub(r'<article>.*?</article>',lambda m:'<article>'+body+'</article>',s,flags=re.S);f.write_text(s)
- title=plain(re.search(r'<h1[^>]*>(.*?)</h1>',body,re.S).group(1));url='/'+str(f.relative_to(D));group=re.search(r'name="kb-group" content="([^"]+)"',s).group(1)
+ title=plain(re.search(r'<h1[^>]*>(.*?)</h1>',body,re.S).group(1));url=f.relative_to(D).as_posix();group=re.search(r'name="kb-group" content="([^"]+)"',s).group(1)
  headings=[(m[1],plain(m[2])) for m in re.finditer(r'<h[23] id="([^"]+)">(.*?)</h[23]>',body,re.S)]
  pages.append(dict(path=f,title=title,url=url,group=group,headings=headings))
  search.append(dict(title=title,url=url,text=plain(body)))
@@ -28,13 +28,13 @@ for f in files:
  for i in range(1,len(parts),2):
   m=re.search(r'id="([^"]+)">(.*?)</h',parts[i],re.S);search.append(dict(title=title+' › '+plain(m[2]),url=url+'#'+m[1],text=plain(parts[i+1])))
 for p in pages:
- nav='<a href="/index.html">← Interactive system guide</a><h2 style="font-size:19px;margin-top:20px">Knowledge base</h2><label for="kb-search">Search all records</label><input id="kb-search" type="search" placeholder="Part, zone, terminal…"><div id="results" aria-live="polite"></div><nav aria-label="Knowledge base index">'
+ nav='<a href="../index.html">← Interactive system guide</a><h2 style="font-size:19px;margin-top:20px">Knowledge base</h2><label for="kb-search">Search all records</label><input id="kb-search" type="search" placeholder="Part, zone, terminal…"><div id="results" aria-live="polite"></div><nav aria-label="Knowledge base index">'
  for group in ['Start here','Equipment','Field records','Reference','History']:
   sub=[x for x in pages if x['group']==group];nav+=f'<details {"open" if group==p["group"] or group=="Start here" else ""}><summary>{group}</summary><ul>'
   for x in sub:
-   nav+=f'<li><a href="{x["url"]}"'+(' aria-current="page"' if x==p else '')+f'>{E(x["title"])}</a>'
+   nav+=f'<li><a href="../{x["url"]}"'+(' aria-current="page"' if x==p else '')+f'>{E(x["title"])}</a>'
    if x['headings']:
-    nav+='<details '+('open' if x==p else '')+'><summary style="font-size:12px;margin-left:8px">Sections</summary><ul class="section-links">'+''.join(f'<li><a href="{x["url"]}#{id}">{E(t)}</a></li>' for id,t in x['headings'])+'</ul></details>'
+    nav+='<details '+('open' if x==p else '')+'><summary style="font-size:12px;margin-left:8px">Sections</summary><ul class="section-links">'+''.join(f'<li><a href="../{x["url"]}#{id}">{E(t)}</a></li>' for id,t in x['headings'])+'</ul></details>'
    nav+='</li>'
   nav+='</ul></details>'
  nav+='</nav>'

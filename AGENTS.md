@@ -5,5 +5,5 @@
 - Distinguish field observations, manufacturer specifications, and inferences. Keep equipment tags and part numbers consistent across pages. Identify unresolved wiring or diagnostic questions explicitly.
 - Put publishable image copies in `dist/assets/photos/`. Preserve original photos in `evidence/original-photos/` and keep site links within `dist/`.
 - After changes, run `python3 tools/refresh.py` and `python3 tools/validate.py` from the root. Review generated diffs and preview affected pages over HTTP.
-- Use `.openai/hosting.json` for the existing Sites project. GitHub and the deployed site are separate. Publish the site when requested.
+- Keep site URLs relative so the site works at both the local preview root and the GitHub Pages repository path. The Pages workflow validates and publishes only `dist/` on pushes to `main`.
 - Treat the legacy Markdown snapshot and migration records as evidence. Maintain current content in HTML.
