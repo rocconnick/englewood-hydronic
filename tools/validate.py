@@ -1,7 +1,8 @@
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit,unquote
-import re,json,subprocess
+import re,json,shutil,subprocess
+from tempfile import TemporaryDirectory
 D=Path(__file__).resolve().parents[1]/'dist'
 class Parse(HTMLParser):
  def __init__(self):super().__init__();self.ids=[];self.links=[]
@@ -29,9 +30,14 @@ for key,url in data['photos'].items():
 for id in re.findall(r'data-id="([^"]+)"',s):
  if '${' in id:continue
  if id not in data['components']:errors.append('Missing component '+id)
-for i,js in enumerate(re.findall(r'<script>(.*?)</script>',s,re.S)):
- p=Path('/tmp')/f'englewood-check-{i}.js';p.write_text(js)
- r=subprocess.run(['/Users/dominickrocco/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node','--check',str(p)],capture_output=True,text=True)
- if r.returncode:errors.append(r.stderr)
+node = shutil.which('node')
+if not node:
+ raise SystemExit('Node.js is required to check the overview JavaScript.')
+with TemporaryDirectory() as tmp:
+ for i,js in enumerate(re.findall(r'<script>(.*?)</script>',s,re.S)):
+  p=Path(tmp)/f'overview-{i}.js'
+  p.write_text(js)
+  r=subprocess.run([node,'--check',str(p)],capture_output=True,text=True)
+  if r.returncode:errors.append(r.stderr)
 print('\n'.join(sorted(set(errors))) if errors else f'PASS: {len(pages)} HTML pages, internal links/anchors, photo references, component IDs, and overview JavaScript.')
 raise SystemExit(bool(errors))

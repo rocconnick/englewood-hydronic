@@ -1,7 +1,0 @@
-The active knowledge base is now the multi-page HTML site.
-Hosted overview: https://englewood-road-hydronic-guide.ornateshrew4.chatgpt.site
-Knowledge base: https://englewood-road-hydronic-guide.ornateshrew4.chatgpt.site/kb/index.html
-Local maintained source: ../hosted/englewood-heating-guide/dist/
-Maintenance instructions: ../hosted/englewood-heating-guide/MAINTENANCE.txt
-Markdown is retired in archive/retired-markdown-2026-11-08 and markdown-snapshot-2026-11-08.zip.
-report/index.html is the previous standalone snapshot, not the maintained site.
