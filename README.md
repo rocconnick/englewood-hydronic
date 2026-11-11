@@ -24,3 +24,16 @@ python3 tools/validate.py
 The refresh script updates the navigation, search index, and overview equipment data. Commit the edited HTML and any generated changes together. Pushes to `main` trigger the GitHub Pages workflow when they change `dist/`, `tools/`, or the Pages workflow itself. You can also run it manually from the Actions tab. In repository Settings → Pages, select GitHub Actions as the publishing source.
 
 The evidence manifest and migration map use the original paths as historical identifiers. The Markdown snapshot is reference material. The retired standalone report and its builders remain available in Git history at `1eb0741`.
+
+The manual library lives in `dist/references/manuals.json`. It records each PDF's
+publisher, actual cover revision, applicability, equipment links, source URLs,
+retrieval date, checksum, keywords and useful physical PDF page numbers.
+`tools/refresh.py` renders the catalog and equipment reference links from it.
+
+After adding or replacing a PDF, update its catalog record, then run
+`python3 tools/index_manuals.py` (requires Poppler's `pdftotext`) before the normal
+refresh/validate commands. Commit `dist/references/manual-pages.json` with the
+PDFs. Normal refresh and deployment read that committed text without needing
+Poppler or network access. Search indexes individual PDF pages and links to
+`#page=N`; the full White-Rodgers catalog is preserved while only its relevant
+relay page is indexed. Text extraction does not OCR scanned drawings.

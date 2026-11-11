@@ -2,6 +2,8 @@
 from pathlib import Path
 from html.parser import HTMLParser
 import html,json,re
+from manuals import render_library, search_records, catalog
+render_library()
 ROOT=Path(__file__).resolve().parents[1];D=ROOT/'dist';E=html.escape
 class Text(HTMLParser):
  def __init__(self):super().__init__();self.out=[];self.skip=0
@@ -39,10 +41,13 @@ for p in pages:
   nav+='</ul></details>'
  nav+='</nav>'
  s=p['path'].read_text();s=re.sub(r'<!--NAV-->.*?<!--/NAV-->','<!--NAV-->'+nav+'<!--/NAV-->',s,flags=re.S);p['path'].write_text(s)
+search.extend(search_records())
 (D/'assets/search.json').write_text(json.dumps(search,ensure_ascii=False))
 # Single equipment metadata source lives in equipment HTML pages.
 f=D/'index.html';s=f.read_text();m=re.search(r'(<script id="report-data" type="application/json">)(.*?)(</script>)',s,re.S);data=json.loads(m[2]);data['components']={}
 for p in sorted((D/'equipment').glob('*.html')):
- c=json.loads(re.search(r'<script type="application/json" id="component-record">(.*?)</script>',p.read_text(),re.S)[1]);data['components'][c['id']]=c
+ c=json.loads(re.search(r'<script type="application/json" id="component-record">(.*?)</script>',p.read_text(),re.S)[1])
+ c['manuals']=[dict(title=x['title'],url='references/'+x['file'],context='kb/documents.html#'+x['id'],applicability=x['applicability']) for x in catalog() if c['id'] in x['components']]
+ data['components'][c['id']]=c
 s=s[:m.start(2)]+json.dumps(data).replace('</','<\\/')+s[m.end(2):];f.write_text(s)
 print(f'Refreshed {len(pages)} HTML pages and {len(search)} searchable sections.')

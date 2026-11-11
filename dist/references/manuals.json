@@ -1,0 +1,1092 @@
+{
+  "schema_version": 1,
+  "research_date": "2026-11-11",
+  "manuals": [
+    {
+      "id": "duomix",
+      "file": "wirsbo-duomix-201-a3030005.pdf",
+      "title": "Wirsbo DuoMix 201 installation handbook — A3030005",
+      "publisher": "Wirsbo / tekmar",
+      "revision": "Revision date not established; 32-page handbook",
+      "components": [
+        "mc",
+        "m1",
+        "m2",
+        "v1",
+        "v2",
+        "out",
+        "s1",
+        "s2",
+        "ret"
+      ],
+      "applicability": "Exact model",
+      "qualification": "Names DuoMix 201 and A3030005. Installed settings and actual field wiring still require verification. This is not the proMix 201 manual. Some display and drawing pages have little extractable text; consult the PDF.",
+      "summary": "Two injection-mixing circuits, outdoor reset, demand inputs, sensor wiring, DIP switches, display menus, output tests and sensor fault messages. Page 8 identifies Mix 2 demand at 3–4 and its pump at 7–8. OPEN is qualified by the displayed sensor name; it is not by itself a diagnosis of a valve end switch.",
+      "keywords": "MC-1 DuoMix 201 A3030005 Mix1 Mix2 Demand 1 2 3 4 N Mix1 Pmp Mix2 Pmp Var1 Var2 Boiler Enable WWSD OPEN SHRT BRet Sup1 Sup2 A3060070 A3060071",
+      "topics": [
+        {
+          "page": 3,
+          "title": "Demand logic and boiler return protection"
+        },
+        {
+          "page": 6,
+          "title": "Power, demand, pump and sensor terminal connections"
+        },
+        {
+          "page": 7,
+          "title": "Sensor wiring and resistance testing"
+        },
+        {
+          "page": 8,
+          "title": "Resistance table and powered input/output checks"
+        },
+        {
+          "page": 9,
+          "title": "DIP switches and settings"
+        },
+        {
+          "page": 12,
+          "title": "Display symbols"
+        },
+        {
+          "page": 19,
+          "title": "Control test routine"
+        },
+        {
+          "page": 20,
+          "title": "MAX HEAT and sensor faults: OUTDOOR, Boil RET, SUPPLY OPEN/SHRT"
+        },
+        {
+          "page": 26,
+          "title": "Variable-speed injection mixing design"
+        }
+      ],
+      "source_url": "https://manualzz.com/doc/73516779/wirsbo-duomix-201-installation-instructions-manual",
+      "download_url": "https://s1p.manualzz.com/store/data/073516779.pdf?k=AwAAAaHLPsrWAAACWFpgtSG2qH0XEPNrdeHbv3I_8tvP",
+      "final_url": "https://s1p.manualzz.com/store/data/073516779.pdf?k=AwAAAaHLPsrWAAACWFpgtSG2qH0XEPNrdeHbv3I_8tvP",
+      "retrieved": "2026-11-11",
+      "sha256": "51b23ed2f9d2fc4393691200ccc325c5611381e63b1c0d4acbfda789e6398fda",
+      "bytes": 1490060
+    },
+    {
+      "id": "zone-module",
+      "file": "uponor-zone-control-a3031003.pdf",
+      "title": "Uponor three/four-zone module instruction sheet",
+      "publisher": "Uponor",
+      "revision": "Instruction-sheet revision not established; covers A3031003/A3031004",
+      "components": [
+        "z1",
+        "z2"
+      ],
+      "applicability": "Related model only",
+      "qualification": "Covers A3031003/A3031004. The installed boards read A303XX0003; this sheet does not prove terminal equivalence or replacement compatibility.",
+      "summary": "Module power, fuse protection, thermostat and actuator connections, expansion jumpers and wiring diagrams for the later three/four-zone modules.",
+      "keywords": "A3031003 A3031004 A303XX0003 ZCM thermostat actuator end switch ES fuse transformer 24 VAC",
+      "topics": [
+        {
+          "page": 1,
+          "title": "Product identities, fuse and power requirements"
+        },
+        {
+          "page": 2,
+          "title": "Wiring diagrams and interconnections"
+        }
+      ],
+      "source_url": "https://www.uponor.com/getmedia/d8052137-a435-49a0-aa51-c335d3295062/zone-control-module-instruction-sheetpdf?sitename=USA",
+      "download_url": "https://www.uponor.com/getmedia/d8052137-a435-49a0-aa51-c335d3295062/zone-control-module-instruction-sheetpdf?sitename=USA",
+      "final_url": "https://www.uponor.com/getmedia/d8052137-a435-49a0-aa51-c335d3295062/zone-control-module-instruction-sheetpdf?sitename=USA",
+      "retrieved": "2026-11-11",
+      "sha256": "f1ae9ac4b83532b958c94665c6f6ce1a09b789e243da24f08f4aa89eade8c588",
+      "bytes": 537658
+    },
+    {
+      "id": "zone-module-legacy",
+      "file": "uponor-a3030003-specification.pdf",
+      "title": "Uponor legacy A3030003/A3030004 module submittal",
+      "publisher": "Uponor",
+      "revision": "Revision B; July 21, 2010",
+      "components": [
+        "z1",
+        "z2"
+      ],
+      "applicability": "Legacy family candidate; identity unverified",
+      "qualification": "Names A3030003/A3030004, not the field marking A303XX0003. Dimensions and terminal illustrations can aid identification but do not prove an installed match. The PDF has an apparent erroneous Power Input row (a brass material designation); do not use that row as an electrical rating.",
+      "summary": "Legacy board dimensions, green/yellow/red LED meanings, end-switch rating, actuator loading and fuse part numbers. Compare this older family with the later A3031003 guide before selecting replacements.",
+      "keywords": "A3030003 A3030004 A303XX0003 A3030009 A3030010 fuse 2A 4A THERMOSTAT TELESTAT R1 R2 Y1 Y2 green yellow red LED ES end switch",
+      "topics": [
+        {
+          "page": 1,
+          "title": "Legacy module identification, LED meanings, end switch and fuses"
+        }
+      ],
+      "source_url": "https://pimmedia.winsupplyinc.com/pim/SPEC/112017/UPONOR-WIRSBO-RADIANT---AQUAPEX_A3030003_0626A3030003_SPEC.pdf",
+      "download_url": "https://pimmedia.winsupplyinc.com/pim/SPEC/112017/UPONOR-WIRSBO-RADIANT---AQUAPEX_A3030003_0626A3030003_SPEC.pdf",
+      "final_url": "https://pimmedia.winsupplyinc.com/pim/SPEC/112017/UPONOR-WIRSBO-RADIANT---AQUAPEX_A3030003_0626A3030003_SPEC.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "c8a31c834fbe3517bcce4efd0bc72e0e544cc0abce4f62645a7f8bdfb1b65d5b",
+      "bytes": 108115
+    },
+    {
+      "id": "wirsbo-handbook",
+      "file": "wirsbo-installation-handbook-1999.pdf",
+      "title": "Wirsbo radiant heating installation handbook",
+      "publisher": "Wirsbo",
+      "revision": "1999-era handbook / reprint; filename HB99_RPrnt10-7",
+      "components": [
+        "mc",
+        "z1",
+        "z2",
+        "bm",
+        "bath",
+        "bed",
+        "living",
+        "rest",
+        "yellow",
+        "exp"
+      ],
+      "applicability": "System design reference",
+      "qualification": "General radiant design and legacy control context; component names in the handbook do not establish the installed manifold, tubing or expansion-tank models.",
+      "summary": "Hydronic piping, radiant manifolds, zone control, injection mixing, pressure testing, filling and startup. Includes legacy DuoMix context.",
+      "keywords": "radiant PEX manifold injection mixing pressure testing filling purging expansion tank Wirsbo A3030005",
+      "topics": [],
+      "source_url": "https://blog.twinsprings.com/wp-content/uploads/2013/05/Wirsbo-Heating_HB99_RPrnt10-7.pdf",
+      "download_url": "https://blog.twinsprings.com/wp-content/uploads/2013/05/Wirsbo-Heating_HB99_RPrnt10-7.pdf",
+      "final_url": "https://blog.twinsprings.com/wp-content/uploads/2013/05/Wirsbo-Heating_HB99_RPrnt10-7.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "9366df2ca6a5042c6c48219890e189b2315af747856aaadc5423aa4295a770a0",
+      "bytes": 3685800
+    },
+    {
+      "id": "polaris",
+      "file": "polaris-pg10-2004-use-care.pdf",
+      "title": "Polaris PG10 installation instructions and use & care",
+      "publisher": "American Water Heater / Polaris",
+      "revision": "6510336; December 2004",
+      "components": [
+        "wh1",
+        "wh2"
+      ],
+      "applicability": "Exact model listed",
+      "qualification": "Explicitly includes PG10* 34-150-2NV/2PV. Match natural-gas and input-specific sections to the nameplate; control revisions must be checked on the unit. The current system uses Polaris heat sources, not the Lennox HM30 described in some other manuals.",
+      "summary": "Venting and condensate, combination space/water-heating piping, thermal expansion, tempering, gas and electrical requirements, water-temperature control, maintenance, ignition LED faults and parts.",
+      "keywords": "Polaris PG10 34-150-2NV 0320092 6510336 150000 ICM LED ignition flame sensor gas valve blower condensate stacking thermal expansion",
+      "topics": [
+        {
+          "page": 1,
+          "title": "Covered models and document identity"
+        },
+        {
+          "page": 5,
+          "title": "Condensate and clearances"
+        },
+        {
+          "page": 15,
+          "title": "Water piping and thermal expansion"
+        },
+        {
+          "page": 17,
+          "title": "Air-handler and combination heating piping"
+        },
+        {
+          "page": 21,
+          "title": "Electrical connections"
+        },
+        {
+          "page": 22,
+          "title": "Input-specific wiring diagrams"
+        },
+        {
+          "page": 24,
+          "title": "Operating sequence and temperature control"
+        },
+        {
+          "page": 27,
+          "title": "Maintenance"
+        },
+        {
+          "page": 28,
+          "title": "Ignition control LED troubleshooting"
+        },
+        {
+          "page": 29,
+          "title": "Ignition software sequence"
+        },
+        {
+          "page": 30,
+          "title": "Repair parts"
+        },
+        {
+          "page": 32,
+          "title": "Model dimensions"
+        }
+      ],
+      "source_url": "https://homeappliance.manualsonline.com/manuals/mfg/polaris/pg10_341502nv_or_2pv.html",
+      "download_url": "https://pdfstore-manualsonline.prod.a.ki/pdfres_02/fe/ff/feffeedf-a545-403b-9865-f5105f279d7f.pdf",
+      "final_url": "https://pdfstore-manualsonline.prod.a.ki/pdfres_02/fe/ff/feffeedf-a545-403b-9865-f5105f279d7f.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "7ba394176a702379da13d7c69b224b9dcff002cca7ccf3baddebb27126ceb3cb",
+      "bytes": 5373392
+    },
+    {
+      "id": "am30-service",
+      "file": "lennox-hm30-am30-service.pdf",
+      "title": "Lennox CompleteHeat HM30/AM30 service literature",
+      "publisher": "Lennox",
+      "revision": "Corp. 9821-L12; revised August 2004",
+      "components": [
+        "a1",
+        "a2",
+        "pa1",
+        "pa2"
+      ],
+      "applicability": "Model family",
+      "qualification": "Includes AM30Q2-40 and AM30Q2/3-70. Verify installed -2 board/motor revisions. HM30 burner/tank sections describe a different heat source from the installed Polaris tanks.",
+      "summary": "AM30 electrical and blower data, board connections, pump operation, fan delays, diagnostic LED, water coil and servicing. Dedicated AM30 blower/pump troubleshooting appears on PDF page 40.",
+      "keywords": "Lennox AM30Q2-40-2 AM30Q2/3-70-2 HM30 9821-L12 blower pump control TB1 W G R C 99K70 99K7001 heating cooling continuous fan LED delay",
+      "topics": [
+        {
+          "page": 3,
+          "title": "AM30 ratings by model"
+        },
+        {
+          "page": 20,
+          "title": "AM30 blower/pump control board"
+        },
+        {
+          "page": 21,
+          "title": "Fan delay and diagnostic LED"
+        },
+        {
+          "page": 22,
+          "title": "Water coil and circulator"
+        },
+        {
+          "page": 25,
+          "title": "Pump servicing and parts table"
+        },
+        {
+          "page": 30,
+          "title": "Maintenance"
+        },
+        {
+          "page": 33,
+          "title": "Operation and wiring diagrams"
+        },
+        {
+          "page": 39,
+          "title": "AM30/HM30 sequence of operation"
+        },
+        {
+          "page": 40,
+          "title": "AM30 blower/pump troubleshooting chart"
+        },
+        {
+          "page": 42,
+          "title": "No-heat diagnostic flowchart"
+        }
+      ],
+      "source_url": "https://www.hvacpartsshop.com/content/lennox-furnace-manuals/HM30-AM30%20Series.pdf",
+      "download_url": "https://www.hvacpartsshop.com/content/lennox-furnace-manuals/HM30-AM30%20Series.pdf",
+      "final_url": "https://www.hvacpartsshop.com/content/lennox-furnace-manuals/HM30-AM30%20Series.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "5f18730f89fcc3e05436bd989321451b865577f39c7d326ffabcc0747f830afb",
+      "bytes": 1062983
+    },
+    {
+      "id": "am30-engineering",
+      "file": "lennox-completeheat-engineering.pdf",
+      "title": "Lennox CompleteHeat engineering data",
+      "publisher": "Lennox",
+      "revision": "Bulletin 210057E; September 2002 (download filename says 0209)",
+      "components": [
+        "a1",
+        "a2",
+        "pa1",
+        "pa2"
+      ],
+      "applicability": "Model family",
+      "qualification": "Engineering family reference; use AM30-specific ratings. HM30 storage and combustion specifications are not Polaris specifications. Retains the previously bundled engineering PDF separately.",
+      "summary": "AM30 capacity, dimensions, motor electrical data, blower performance and hydronic installation configurations.",
+      "keywords": "AM30Q2-40 AM30Q2/3-70 CFM heating outputs water flow head loss dimensions HM30",
+      "topics": [],
+      "source_url": "https://tech.lennoxintl.com/C03e7o14l/VIu12Ch2uV/ehb_completeheat_0209.pdf",
+      "download_url": "https://tech.lennoxintl.com/C03e7o14l/VIu12Ch2uV/ehb_completeheat_0209.pdf",
+      "final_url": "https://tech.lennoxintl.com/C03e7o14l/VIu12Ch2uV/ehb_completeheat_0209.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "c5159c87b7e98e2d6cd1862cc6d7b084ecf114169e24a7abf9f78d5c10f8ca8e",
+      "bytes": 659903
+    },
+    {
+      "id": "c26",
+      "file": "lennox-c26-engineering.pdf",
+      "title": "Lennox C26 evaporator coil engineering data",
+      "publisher": "Lennox",
+      "revision": "Bulletin 210061; November 1997",
+      "components": [
+        "a1"
+      ],
+      "applicability": "Model family",
+      "qualification": "Covers the C26 family including C26-41. Refrigerant-side data must not be treated as hydronic water pressure limits.",
+      "summary": "C26 coil sizes, cooling combinations, refrigerant connections, dimensions and air-side pressure drop.",
+      "keywords": "C26-41-1 C26 evaporator cooling coil HCFC-22 R22 refrigerant pressure drop dimensions",
+      "topics": [],
+      "source_url": "https://tech.lennoxintl.com/C03e7o14l/VIu12Ch2uV/ehb_c26_1197.pdf",
+      "download_url": "https://tech.lennoxintl.com/C03e7o14l/VIu12Ch2uV/ehb_c26_1197.pdf",
+      "final_url": "https://tech.lennoxintl.com/C03e7o14l/VIu12Ch2uV/ehb_c26_1197.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "efc1e0c55c8f6424d78a5dfd075ab6af1f72761524fd6a05f77d8a020f034606",
+      "bytes": 422388
+    },
+    {
+      "id": "taco-instructions",
+      "file": "taco-00-instructions-102-054.pdf",
+      "title": "Taco 00 cartridge circulator instruction sheet",
+      "publisher": "Taco",
+      "revision": "102-054; effective July 1, 2015",
+      "components": [
+        "b",
+        "m1",
+        "m2",
+        "v1",
+        "v2",
+        "pa1",
+        "pa2"
+      ],
+      "applicability": "Model family",
+      "qualification": "General 00-series instructions; temperature limits follow the installed nameplate. Full model suffix controls replacement-parts selection. Var 2 identity remains provisional.",
+      "summary": "Mounting and flow direction, electrical connections, filling and purging, motor replacement and cartridge service. Bearings require water lubrication; the sheet calls for a filled system before operation.",
+      "keywords": "Taco 00 006-B4-11 008-BC6 102-054 circulator cartridge motor capacitor air purge dry running mounting",
+      "topics": [
+        {
+          "page": 1,
+          "title": "Installation, orientation, filling and operation"
+        },
+        {
+          "page": 2,
+          "title": "Motor and cartridge replacement"
+        }
+      ],
+      "source_url": "https://www.tacocomfort.com/documents/FileLibrary/102-054.pdf",
+      "download_url": "https://www.tacocomfort.com/documents/FileLibrary/102-054.pdf",
+      "final_url": "https://www.tacocomfort.com/documents/FileLibrary/102-054.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "2f941e984558612baa8f81ec9238834ab11f5efa8e93193413437f3b1263f595",
+      "bytes": 117436
+    },
+    {
+      "id": "taco-parts",
+      "file": "taco-00-replacement-parts.pdf",
+      "title": "BuyTaco 00 circulator replacement-parts table",
+      "publisher": "BuyTaco / Taco Distribution (distributor reference)",
+      "revision": "Web table printout dated December 30, 2016",
+      "components": [
+        "b",
+        "m1",
+        "m2",
+        "v1",
+        "v2",
+        "pa1",
+        "pa2"
+      ],
+      "applicability": "Exact suffixes listed",
+      "qualification": "Distributor table lists exact 006-B4-11 and 008-BC6 suffixes. Corroborate against Taco manufacturer list 104-110 (also preserved here); verify the complete pump nameplate before ordering.",
+      "summary": "PDF page 4 maps 006-B4-11 to cartridge 006-040RP. PDF page 10 maps 008-BC6 to 008-045RP. Both rows list capacitor 007-002RP; casing seals differ.",
+      "keywords": "006-B4-11 006-040RP 008-BC6 008-045RP 005-020RP 007-002RP 007-003RP 008-005RP cartridge capacitor seal O-ring replacement BuyTaco",
+      "topics": [
+        {
+          "page": 1,
+          "title": "Distributor table: 003 model family"
+        },
+        {
+          "page": 4,
+          "title": "006-B4-11 cartridge and capacitor row"
+        },
+        {
+          "page": 10,
+          "title": "008-BC6 cartridge and capacitor row"
+        }
+      ],
+      "source_url": "https://www.tacodistribution.com/customer/docs/00%20Series%20Replacement%20Parts%20List.pdf",
+      "download_url": "https://www.tacodistribution.com/customer/docs/00%20Series%20Replacement%20Parts%20List.pdf",
+      "final_url": "https://www.tacodistribution.com/customer/docs/00%20Series%20Replacement%20Parts%20List.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "32c53d9ce3aa4ebec385444b737b4d61f44649475d7a0f30477f8c72dfd47243",
+      "bytes": 260365
+    },
+    {
+      "id": "taco006",
+      "file": "taco-006-submittal.pdf",
+      "title": "Taco model 006 cartridge circulator submittal",
+      "publisher": "Taco",
+      "revision": "101-028; March 20, 2017",
+      "components": [
+        "b",
+        "m1",
+        "pa1",
+        "pa2"
+      ],
+      "applicability": "Model family",
+      "qualification": "General 006 family submittal; not an OEM 006-B4-11 cartridge compatibility statement. Use the exact-suffix replacement table for parts.",
+      "summary": "006 pump curve, motor/electrical data, materials, connection variants and dimensions.",
+      "keywords": "Taco 006 006-B4-11 bronze 115V 0.52A 1/40 horsepower pump curve head flow GPM 101-028",
+      "topics": [
+        {
+          "page": 1,
+          "title": "Performance curve, electrical data and dimensions"
+        }
+      ],
+      "source_url": "https://www.tacocomfort.com/documents/FileLibrary/Model-006-Cartridge-Circulator_Submittal_101-028.pdf",
+      "download_url": "https://www.tacocomfort.com/documents/FileLibrary/Model-006-Cartridge-Circulator_Submittal_101-028.pdf",
+      "final_url": "https://www.tacocomfort.com/documents/FileLibrary/Model-006-Cartridge-Circulator_Submittal_101-028.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "e90dc1762118c5fb0399fc3b73232c73a7296720d3d87e952104fd29a348931a",
+      "bytes": 322002
+    },
+    {
+      "id": "taco008",
+      "file": "taco-008-submittal.pdf",
+      "title": "Taco model 008 cartridge circulator submittal",
+      "publisher": "Taco",
+      "revision": "101-031; May 8, 2009",
+      "components": [
+        "m2",
+        "v1",
+        "v2"
+      ],
+      "applicability": "Exact model listed",
+      "qualification": "Includes bronze 008-BC6; Var 2 nameplate reading remains provisional. Curves are pump characteristics, not measured installed flow.",
+      "summary": "008 curve, electrical ratings, construction, connection dimensions and bronze model listing.",
+      "keywords": "Taco 008 008-BC6 115V 0.84A 1/25 horsepower head flow injection circulator bronze 101-031",
+      "topics": [
+        {
+          "page": 1,
+          "title": "008-BC6 model row and pump curve"
+        }
+      ],
+      "source_url": "https://www.tacocomfort.com/documents/FileLibrary/101-031.pdf",
+      "download_url": "https://www.tacocomfort.com/documents/FileLibrary/101-031.pdf",
+      "final_url": "https://www.tacocomfort.com/documents/FileLibrary/101-031.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "200607b7547f5287ccdeba142831ad57aecf5ecc41c4ae827af7a4a4568eb706",
+      "bytes": 643690
+    },
+    {
+      "id": "grundfos",
+      "file": "grundfos-up-ups-installation.pdf",
+      "title": "Grundfos UP/UPS circulator installation and operation",
+      "publisher": "Grundfos",
+      "revision": "Grundfos document 5935081; revision date not established",
+      "components": [
+        "g"
+      ],
+      "applicability": "Model family",
+      "qualification": "UP/UPS 26 bronze/stainless family reference; confirm P/N 52722518, UPS 26-99 BFC voltage and installed check-valve configuration on the nameplate. ALPHA and UPSe manuals were excluded.",
+      "summary": "Mounting, terminal-box orientation, electrical checks, check-valve removal and startup. PDF page 9 covers failure to operate and shaft/impeller checks.",
+      "keywords": "Grundfos UPS 26-99 BFC 52722518 UP26 UPS26 bronze circulator three speed check valve failure to operate rotor impeller",
+      "topics": [
+        {
+          "page": 5,
+          "title": "Pre-installation and pump identification"
+        },
+        {
+          "page": 6,
+          "title": "Installation"
+        },
+        {
+          "page": 7,
+          "title": "Check-valve and motor-head work"
+        },
+        {
+          "page": 8,
+          "title": "Wiring, speed selection and startup"
+        },
+        {
+          "page": 9,
+          "title": "Failure-to-operate troubleshooting"
+        }
+      ],
+      "source_url": "https://api.grundfos.com/literature/Grundfosliterature-5935081.pdf",
+      "download_url": "https://api.grundfos.com/literature/Grundfosliterature-5935081.pdf",
+      "final_url": "https://api.grundfos.com/literature/Grundfosliterature-5935081.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "0c1f956c7c8df4f36e2825c34151576eb003c7a486e81baa4a8aa049fef0b8d7",
+      "bytes": 397697
+    },
+    {
+      "id": "valves",
+      "file": "honeywell-v8043-95-6983.pdf",
+      "title": "Honeywell V4043/V4044/V8043/V8044 zone valve instructions",
+      "publisher": "Honeywell Home / Resideo",
+      "revision": "95-6983EF-03",
+      "components": [
+        "yellow",
+        "bath",
+        "bed",
+        "living",
+        "rest"
+      ],
+      "applicability": "Model family",
+      "qualification": "V8043E family reference. Only Yellow Room is confirmed V8043E1061; other valve suffixes remain unidentified. Diagrams are manufacturer examples, not traced as-built wiring.",
+      "summary": "Valve mounting, flow direction, wiring, manual lever, checkout, normally closed/open variants and auxiliary end-switch behavior.",
+      "keywords": "V8043E1061 V8043E V8043F end switch auxiliary switch motor yellow red leads manual lever normally closed Honeywell zone valve",
+      "topics": [
+        {
+          "page": 1,
+          "title": "Application and valve variants"
+        },
+        {
+          "page": 2,
+          "title": "Mounting and flow direction"
+        },
+        {
+          "page": 3,
+          "title": "Wiring, operation and checkout"
+        }
+      ],
+      "source_url": "https://customer.resideo.com/resources/Techlit/TechLitDocuments/95-0000s/95-6983EF.pdf",
+      "download_url": "https://customer.resideo.com/resources/Techlit/TechLitDocuments/95-0000s/95-6983EF.pdf",
+      "final_url": "https://digitalassets.resideo.com/damroot/Original/10005/95-6983EF.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "37b8edb9aeb34f73d0b3f96b08f2aa252f99a5f39aaaa8ee11949957b96cd4ed",
+      "bytes": 1331198
+    },
+    {
+      "id": "relay-r8222",
+      "file": "honeywell-r8222-60-2056.pdf",
+      "title": "Honeywell R4222/R8222/R4228/R8228 switching relays",
+      "publisher": "Honeywell / Resideo",
+      "revision": "60-2056-4",
+      "components": [
+        "br",
+        "relays"
+      ],
+      "applicability": "Model family",
+      "qualification": "R8222D family includes DPDT contact form; confirm exact R8222D1014 coil/nameplate and terminal diagram. Family drawings do not establish the external field wiring.",
+      "summary": "Coil and contact ratings, terminal arrangements, mounting and relay circuit diagrams. Distinguishes coil supply from switched-load contacts.",
+      "keywords": "R8222D1014 R8222D R8222 DPDT 24VAC coil common contact NO NC 60-2056",
+      "topics": [
+        {
+          "page": 2,
+          "title": "Ratings and pole forms"
+        },
+        {
+          "page": 3,
+          "title": "Coil specifications and mounting"
+        },
+        {
+          "page": 7,
+          "title": "Circuit and terminal designations"
+        }
+      ],
+      "source_url": "https://customer.resideo.com/resources/Techlit/TechLitDocuments/60-0000s/60-2056.pdf",
+      "download_url": "https://customer.resideo.com/resources/Techlit/TechLitDocuments/60-0000s/60-2056.pdf",
+      "final_url": "https://digitalassets.resideo.com/damroot/Original/10013/60-2056.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "348f61013072c104f67f64c3bc82ef39c948e8bb3f2aa65c7189a7aedea45fa3",
+      "bytes": 1583502
+    },
+    {
+      "id": "relay-wr",
+      "file": "white-rodgers-product-catalog.pdf",
+      "title": "White-Rodgers catalog — 90-293Q enclosed relay",
+      "publisher": "White-Rodgers / Copeland",
+      "revision": "2026 wholesale catalog; relay sheet R-4899-5 (July 2024), printed p. 87",
+      "components": [
+        "relays"
+      ],
+      "applicability": "Exact model listed",
+      "qualification": "Index is limited to PDF page 94 (printed page 87), the 90-290Q through 90-295Q family. The complete downloaded catalog is preserved. Does not identify the lower-right relay.",
+      "summary": "90-293Q is a 24 VAC SPDT enclosed relay. The table gives coil resistance/current, sealed/inrush VA, contact ratings and schematic.",
+      "keywords": "White Rodgers 90-293Q 90-293 Type 84 SPDT 24VAC coil 90 ohms 125mA 3VA 4VA relay",
+      "topics": [
+        {
+          "page": 94,
+          "title": "90-293Q coil data, contact ratings and wiring diagrams"
+        }
+      ],
+      "source_url": "https://www.copeland.com/documents/white-rodgers-product-catalog-en-us-1619412.pdf",
+      "download_url": "https://www.copeland.com/documents/white-rodgers-product-catalog-en-us-1619412.pdf",
+      "final_url": "https://media.copeland.com:443/143acde8-db3d-48bc-822f-b16d0016fd91/R-4899%20-2%20-%20White-Rodgers%20-%20Product%20Catalog.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "4a923b9378e5626ab29709d0c24fd16620339f8ca6f3f0bd110e54939b35bb6b",
+      "bytes": 9402629,
+      "index_pages": [
+        94
+      ]
+    },
+    {
+      "id": "relay-mars",
+      "file": "mars-903-fan-relays.pdf",
+      "title": "MARS Series 903 fan relay specifications and cross-reference",
+      "publisher": "MARS",
+      "revision": "Catalog sheet C-32; revision not stated",
+      "components": [
+        "relays"
+      ],
+      "applicability": "Exact model listed",
+      "qualification": "Lists MARS 90293 and WR/RBM 90-293Q cross-reference. Manufacturer catalog equivalence does not prove the cabinet wiring or identify the lower-right relay.",
+      "summary": "90293 is the 24 V SPDT variant; the sheet lists contact ratings and the cross-reference to 90-293 and 90-293Q.",
+      "keywords": "MARS 90293 90290 903 series 90-293Q WR RBM Type 84 24V SPDT relay coil contact rating",
+      "topics": [
+        {
+          "page": 1,
+          "title": "90293 selection, coil and contact ratings, WR/RBM cross-reference"
+        }
+      ],
+      "source_url": "https://assets.unilogcorp.com/267/ITEM/DOC/Mars_90290_Specification_Sheet.pdf",
+      "download_url": "https://assets.unilogcorp.com/267/ITEM/DOC/Mars_90290_Specification_Sheet.pdf",
+      "final_url": "https://assets.unilogcorp.com/267/ITEM/DOC/Mars_90290_Specification_Sheet.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "8535ddd483e2dc9e796bb8dbafd510dd0b9091e7880e0c2e9f16bc996c368a70",
+      "bytes": 294424
+    },
+    {
+      "id": "emm3",
+      "file": "honeywell-emm3-68-3041.pdf",
+      "title": "Honeywell EMM-3 Electronic MiniZone product data",
+      "publisher": "Honeywell",
+      "revision": "68-3041-2; October 2002",
+      "components": [
+        "panel2"
+      ],
+      "applicability": "Exact model",
+      "qualification": "EMM-3, not EMM-3U. Reference for the identified attic air-zone panel; panel capability is not proof of installed thermostat staging or wiring.",
+      "summary": "Thermostat and damper wiring, startup, purge, LEDs, discharge-air sensor limits and diagnostic flowcharts. M1/M4/M6 are damper terminals.",
+      "keywords": "EMM-3 MiniZone Trol-A-Temp M1 M4 M6 ZMS C7735 damper thermostat R W Y G purge boot LED troubleshooting 68-3041",
+      "topics": [
+        {
+          "page": 3,
+          "title": "Damper terminals and wiring"
+        },
+        {
+          "page": 4,
+          "title": "Wiring checkout"
+        },
+        {
+          "page": 7,
+          "title": "Startup"
+        },
+        {
+          "page": 8,
+          "title": "Sequence and purge"
+        },
+        {
+          "page": 9,
+          "title": "Troubleshooting and LED states"
+        },
+        {
+          "page": 10,
+          "title": "Heating diagnostic flowchart"
+        }
+      ],
+      "source_url": "https://customer.resideo.com/resources/Techlit/TechLitDocuments/68-0000s/68-3041.pdf",
+      "download_url": "https://customer.resideo.com/resources/Techlit/TechLitDocuments/68-0000s/68-3041.pdf",
+      "final_url": "https://digitalassets.resideo.com/damroot/Original/10013/68-3041.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "fbed21ae7996d3e0fbfa447ca2738d278547fa820b311c1537cd3f22608fee83",
+      "bytes": 294545
+    },
+    {
+      "id": "mabs",
+      "file": "honeywell-mabs-ez-69-1360.pdf",
+      "title": "Honeywell Mastertrol MABS EZ-2/EZ-4 product data",
+      "publisher": "Honeywell / Trol-A-Temp",
+      "revision": "69-1360-2; September 2001",
+      "components": [
+        "panel1"
+      ],
+      "applicability": "Exact model listed",
+      "qualification": "EZ-4 is covered alongside EZ-2. Configured staging, discharge sensor and downstream dampers still require field verification.",
+      "summary": "Thermostat, equipment and damper connections, startup, LED status, second-stage operation, purge, ZoneMAX limits and troubleshooting.",
+      "keywords": "MABS EZ-4 EZ4 EZ-2 Mastertrol Trol-A-Temp ZCP-1 W1 W2 Y1 Y2 R G C purge DIP LED ZoneMAX 69-1360",
+      "topics": [
+        {
+          "page": 3,
+          "title": "Mounting and wiring guidelines"
+        },
+        {
+          "page": 4,
+          "title": "Thermostat and damper hookups"
+        },
+        {
+          "page": 6,
+          "title": "Equipment hookups"
+        },
+        {
+          "page": 8,
+          "title": "Startup and checkout"
+        },
+        {
+          "page": 9,
+          "title": "Sequence and staging"
+        },
+        {
+          "page": 11,
+          "title": "Thermostats and second-stage settings"
+        },
+        {
+          "page": 12,
+          "title": "Troubleshooting table"
+        }
+      ],
+      "source_url": "https://customer.resideo.com/resources/Techlit/TechLitDocuments/69-0000s/69-1360.pdf",
+      "download_url": "https://customer.resideo.com/resources/Techlit/TechLitDocuments/69-0000s/69-1360.pdf",
+      "final_url": "https://digitalassets.resideo.com/damroot/Original/10012/69-1360.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "0181a30a667440ce0e0cdb71685ef5681c710f30b9dae7fce8b62c7d874923f2",
+      "bytes": 339142
+    },
+    {
+      "id": "caleffi-install",
+      "file": "caleffi-521-installation.pdf",
+      "title": "Caleffi MixCal 521 installation, commissioning and service",
+      "publisher": "Caleffi",
+      "revision": "38476.14",
+      "components": [
+        "tm1",
+        "tm2"
+      ],
+      "applicability": "Series / suffix-qualified",
+      "qualification": "Covers 521A/AC mixing valves. Domestic valve SKU 521519AC is confirmed; basement radiant valve is 521 with suffix unverified. Apply each valve in its own piping context.",
+      "summary": "Mixing principle, commissioning, check valves, temperature adjustment, recirculation layouts, service and symptom/cause/correction chart. AC variants include inlet check valves; gauge and connection options depend on suffix.",
+      "keywords": "521519AC 521A 521AC MixCal thermostatic mixing valve gauge check valve hot cold mixed commissioning scale temperature fluctuation",
+      "topics": [
+        {
+          "page": 1,
+          "title": "Product range and specifications"
+        },
+        {
+          "page": 5,
+          "title": "Installation and application"
+        },
+        {
+          "page": 6,
+          "title": "Check valves and commissioning"
+        },
+        {
+          "page": 7,
+          "title": "Adjustment and setting lock"
+        },
+        {
+          "page": 8,
+          "title": "Recirculation layouts"
+        },
+        {
+          "page": 9,
+          "title": "Replacement parts"
+        },
+        {
+          "page": 10,
+          "title": "Maintenance and troubleshooting"
+        },
+        {
+          "page": 16,
+          "title": "Symptom/cause/corrective-action chart"
+        }
+      ],
+      "source_url": "https://www.caleffi.com/sites/default/files/media/external-file/38476_NA.pdf",
+      "download_url": "https://www.caleffi.com/sites/default/files/media/external-file/38476_NA.pdf",
+      "final_url": "https://www.caleffi.com/sites/default/files/media/external-file/38476_NA.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "dbb3bcc81f9552512108618ac8af7482b56a757f48ea4cec283960e03eb93546",
+      "bytes": 1282784
+    },
+    {
+      "id": "caleffi-technical",
+      "file": "caleffi-521-na-technical.pdf",
+      "title": "Caleffi MixCal 521 North American technical brochure",
+      "publisher": "Caleffi",
+      "revision": "01050/23.1 NA; replaces 01050/23 NA",
+      "components": [
+        "tm1",
+        "tm2"
+      ],
+      "applicability": "Series / suffix-qualified",
+      "qualification": "North American brochure, distinct from European 521 specifications. Exact installed suffix determines fittings, gauge, check valves and certification applicability.",
+      "summary": "Selection tables, pressure/temperature limits, flow curves, materials, gauge options, dimensional drawings, mixing and recirculation application examples.",
+      "keywords": "521519AC 521 521A MixCal Cv GPM ASSE 1017 dimensions gauge check valves thermal mixing",
+      "topics": [
+        {
+          "page": 1,
+          "title": "Series functions and product range"
+        },
+        {
+          "page": 2,
+          "title": "Suffix options and dimensions"
+        },
+        {
+          "page": 3,
+          "title": "Specifications"
+        },
+        {
+          "page": 5,
+          "title": "Flow and application guidance"
+        }
+      ],
+      "source_url": "https://www.caleffi.com/sites/default/files/media/external-file/01050_NA.pdf",
+      "download_url": "https://www.caleffi.com/sites/default/files/media/external-file/01050_NA.pdf",
+      "final_url": "https://www.caleffi.com/sites/default/files/media/external-file/01050_NA.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "489926cadfe5f654cd6b181e619a703dfafc4f648a45f2b8d49ee06e0ceab5c4",
+      "bytes": 3495786
+    },
+    {
+      "id": "sensor071",
+      "file": "tekmar-071.pdf",
+      "title": "tekmar Universal Sensor 071 data brochure",
+      "publisher": "tekmar",
+      "revision": "D071; March 2009",
+      "components": [
+        "s2",
+        "s1",
+        "ret"
+      ],
+      "applicability": "Confirmed SUP 2; others conditional",
+      "qualification": "SUP 2 is confirmed tekmar 071. SUP 1 and return-probe models are unverified; this manual is a reference candidate for those probes.",
+      "summary": "Pipe/well mounting, insulation, wire extensions, sensor isolation and resistance-versus-temperature testing.",
+      "keywords": "071 A3060071 SUP2 SUP1 BRet Com sensor thermistor resistance ohms open short pipe well insulation",
+      "topics": [
+        {
+          "page": 1,
+          "title": "Pipe/well mounting"
+        },
+        {
+          "page": 2,
+          "title": "Wiring and sensor testing"
+        },
+        {
+          "page": 3,
+          "title": "Sensor testing and resistance chart"
+        }
+      ],
+      "source_url": "https://www.watts.com/dfsmedia/0533dbba17714b1ab581ab07a4cbb521/81263-source/639056648550000000/071-dl-06.pdf",
+      "download_url": "https://www.watts.com/dfsmedia/0533dbba17714b1ab581ab07a4cbb521/81263-source/639056648550000000/071-dl-06.pdf",
+      "final_url": "https://www.watts.com/dfsmedia/0533dbba17714b1ab581ab07a4cbb521/81263-source/639056648550000000/071-dl-06.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "259f54a671f6b0cc718a71597847b9a8e4a4b775b1285710dc752eb1e9a0107b",
+      "bytes": 228121
+    },
+    {
+      "id": "sensor070",
+      "file": "tekmar-070-outdoor-sensor.pdf",
+      "title": "tekmar Outdoor Sensor 070 data brochure",
+      "publisher": "tekmar",
+      "revision": "D070; May 2007",
+      "components": [
+        "out"
+      ],
+      "applicability": "Candidate identity",
+      "qualification": "The DuoMix package lists A3060070, but the installed outdoor sensor model is unrecorded. Do not promote the package specification to an as-built identification.",
+      "summary": "Outdoor mounting and siting, wiring, sensor testing and resistance characteristics for the 070 thermistor.",
+      "keywords": "070 A3060070 outdoor sensor thermistor 10k resistance WWSD outdoor reset",
+      "topics": [
+        {
+          "page": 1,
+          "title": "Outdoor placement and mounting"
+        },
+        {
+          "page": 2,
+          "title": "Wiring and sensor testing"
+        },
+        {
+          "page": 3,
+          "title": "Sensor test and resistance chart"
+        }
+      ],
+      "source_url": "https://www.watts.com/dfsmedia/0533dbba17714b1ab581ab07a4cbb521/42659-source/639219132160000000/070-dl-06.pdf",
+      "download_url": "https://www.watts.com/dfsmedia/0533dbba17714b1ab581ab07a4cbb521/42659-source/639219132160000000/070-dl-06.pdf",
+      "final_url": "https://www.watts.com/dfsmedia/0533dbba17714b1ab581ab07a4cbb521/42659-source/639219132160000000/070-dl-06.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "7dcf06d381e6266ddb1ebbcc4ef79c854720422b05325a0a36f48a07adb379f9",
+      "bytes": 238286
+    },
+    {
+      "id": "sensor-testing",
+      "file": "tekmar-sensor-testing.pdf",
+      "title": "tekmar sensor testing troubleshooting guide",
+      "publisher": "tekmar / Watts",
+      "revision": "TG-T-SensorTesting; 2025 guide",
+      "components": [
+        "s2",
+        "s1",
+        "ret",
+        "out",
+        "mc"
+      ],
+      "applicability": "General diagnostic reference",
+      "qualification": "Resistance chart applies to the specified sensor family; verify the installed sensor before interpreting resistance. This guide does not diagnose the current fault by itself.",
+      "summary": "Brief guide to comparing isolated sensor resistance with measured temperature when the control shows open, short or implausible readings.",
+      "keywords": "sensor testing resistance chart ohms OPEN SHRT thermistor temperature multimeter",
+      "topics": [
+        {
+          "page": 1,
+          "title": "Sensor resistance test and chart"
+        }
+      ],
+      "source_url": "https://www.watts.com/dfsmedia/0533dbba17714b1ab581ab07a4cbb521/658817-source/639280395890000000/tg-t-sensortesting-2503.pdf",
+      "download_url": "https://www.watts.com/dfsmedia/0533dbba17714b1ab581ab07a4cbb521/658817-source/639280395890000000/tg-t-sensortesting-2503.pdf",
+      "final_url": "https://www.watts.com/dfsmedia/0533dbba17714b1ab581ab07a4cbb521/658817-source/639280395890000000/tg-t-sensortesting-2503.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "ad5ab9ffc411cc85acf2c35000e50693c67440176500cd6a0e26c4bf1b8cbbc6",
+      "bytes": 619121
+    },
+    {
+      "id": "nest",
+      "file": "nest-thermostat-installation.pdf",
+      "title": "Google Nest Thermostat installation guide",
+      "publisher": "Google Nest",
+      "revision": "Google Home app edition; revision date not stated",
+      "components": [
+        "stat-living",
+        "stats"
+      ],
+      "applicability": "Product family; verify generation",
+      "qualification": "For the Google Home app Nest Thermostat. The field record says Nest Thermostat (app: 1st generation); hardware identity still needs confirmation. This is not a Nest Learning Thermostat staging specification.",
+      "summary": "Compatibility checks, preserving the old wiring record, base wiring, R/C connections, app setup and testing.",
+      "keywords": "Nest Thermostat 2020 first generation Living Room Living Area R C W Y G Google Home wiring setup",
+      "topics": [
+        {
+          "page": 1,
+          "title": "Compatibility and preparation"
+        },
+        {
+          "page": 2,
+          "title": "Wiring, setup and testing"
+        }
+      ],
+      "source_url": "https://60a99bedadae98078522-a9b6cded92292ef3bace063619038eb1.ssl.cf2.rackcdn.com/documents_manual_nest_thermostat_instructions.pdf",
+      "download_url": "https://60a99bedadae98078522-a9b6cded92292ef3bace063619038eb1.ssl.cf2.rackcdn.com/documents_manual_nest_thermostat_instructions.pdf",
+      "final_url": "https://60a99bedadae98078522-a9b6cded92292ef3bace063619038eb1.ssl.cf2.rackcdn.com/documents_manual_nest_thermostat_instructions.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "8128df28b4c53b07ae9aaa0347acb4bd2e96a21390f58904282787995df06c86",
+      "bytes": 3102856
+    },
+    {
+      "id": "nest-power",
+      "file": "nest-power-connector-pro-guide.pdf",
+      "title": "Google Nest Power Connector Pro installation guide",
+      "publisher": "Google Nest",
+      "revision": "2022 edition",
+      "components": [
+        "stat-living",
+        "stats",
+        "panel1"
+      ],
+      "applicability": "Accessory reference only",
+      "qualification": "No Power Connector is confirmed installed. Included for future C-wire/power troubleshooting, not as a recommendation to add an accessory or proof of compatibility.",
+      "summary": "Power and C-wire requirements, placement at a zone controller, system-specific diagrams and N260/N261 low-power troubleshooting.",
+      "keywords": "Nest Power Connector C wire common zoned system zone controller heat only R W N260 N261 low power",
+      "topics": [
+        {
+          "page": 4,
+          "title": "Compatibility and supported thermostats"
+        },
+        {
+          "page": 5,
+          "title": "Zoned-system placement"
+        },
+        {
+          "page": 7,
+          "title": "Wiring diagram selection"
+        },
+        {
+          "page": 14,
+          "title": "Power troubleshooting"
+        },
+        {
+          "page": 15,
+          "title": "N260/N261 low-power errors"
+        }
+      ],
+      "source_url": "https://services.google.com/fh/files/helpcenter/nest_power_connector_pro_installation_guide_2022.pdf",
+      "download_url": "https://services.google.com/fh/files/helpcenter/nest_power_connector_pro_installation_guide_2022.pdf",
+      "final_url": "https://services.google.com/fh/files/helpcenter/nest_power_connector_pro_installation_guide_2022.pdf",
+      "retrieved": "2026-11-11",
+      "sha256": "39ceefcdc7217912b489b3231cf08a4118f41eb779144e0c68f9014d25bded84",
+      "bytes": 8398475
+    },
+    {
+      "id": "existing-taco-parts",
+      "file": "Taco-008-045RP-Replacement-Parts-List.pdf",
+      "title": "Taco 00 replacement parts list — manufacturer table",
+      "publisher": "Taco",
+      "revision": "104-110; June 28, 2015",
+      "components": [
+        "b",
+        "m1",
+        "m2",
+        "v1",
+        "v2",
+        "pa1",
+        "pa2"
+      ],
+      "applicability": "Exact suffixes listed; existing manufacturer reference",
+      "qualification": "Original bundled document, retained at its existing URL. Original download URL/date were not recorded. Verify full model suffix.",
+      "summary": "Manufacturer table explicitly maps 006-B4-11 to 006-040RP (PDF page 5), and 008-BC6 to 008-045RP (PDF page 13). Both rows list capacitor 007-002RP. This is pump-to-cartridge evidence, not a Lennox kit equivalence statement.",
+      "keywords": "Taco 104-110 008-045RP 006-B4-11 006-040RP cartridge replacement",
+      "topics": [
+        {
+          "page": 1,
+          "title": "Parts diagram and revision"
+        },
+        {
+          "page": 5,
+          "title": "006-B4-11 → 006-040RP manufacturer row"
+        },
+        {
+          "page": 13,
+          "title": "008-BC6 → 008-045RP manufacturer row"
+        }
+      ],
+      "source_url": null,
+      "download_url": null,
+      "final_url": null,
+      "retrieved": null,
+      "sha256": "6749175f239188eff348616ef5f6764d4c2a79295dce2545c00cc1591a87e1ab",
+      "bytes": 248554
+    },
+    {
+      "id": "existing-lennox",
+      "file": "lennox_am30_completeheat.pdf",
+      "title": "Previously bundled Lennox CompleteHeat engineering data",
+      "publisher": "Lennox",
+      "revision": "See document cover",
+      "components": [
+        "a1",
+        "a2"
+      ],
+      "applicability": "Existing reference",
+      "qualification": "Original bundled engineering PDF, retained. Web source and acquisition date were not recorded. HM30 heat-module specifications do not describe the Polaris tanks.",
+      "summary": "Engineering ratings, dimensions, electrical and blower performance data.",
+      "keywords": "Lennox AM30 HM30 engineering water heating blower",
+      "topics": [],
+      "source_url": null,
+      "download_url": null,
+      "final_url": null,
+      "retrieved": null,
+      "sha256": "c5159c87b7e98e2d6cd1862cc6d7b084ecf114169e24a7abf9f78d5c10f8ca8e",
+      "bytes": 659903
+    },
+    {
+      "id": "promix-crossref",
+      "file": "sb0051_01.PDF",
+      "title": "tekmar Wirsbo pro Series cross-reference bulletin",
+      "publisher": "tekmar",
+      "revision": "SB 051 v0011; August 25, 2008",
+      "components": [
+        "mc"
+      ],
+      "applicability": "Exclusion / comparison reference",
+      "qualification": "Covers pro Series products. It does not establish a tekmar replacement for the installed DuoMix 201 A3030005; do not infer proMix 201 or 374 equivalence.",
+      "summary": "Preserved bulletin helps distinguish proMix from DuoMix when searching for replacement information.",
+      "keywords": "proMix 201 DuoMix 201 A3030005 SB051 361 374 cross reference not equivalent",
+      "topics": [],
+      "source_url": null,
+      "download_url": null,
+      "final_url": null,
+      "retrieved": null,
+      "sha256": "b771b982121252997db88cba3077beccee180f2507a586c241662ac3013f800c",
+      "bytes": 79438
+    }
+  ]
+}
